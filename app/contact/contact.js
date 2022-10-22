@@ -8,7 +8,7 @@ const ContactSchema = new Schema({
     email: String,
 }, {
     timestamps: true,
-    collection: 'contacts'
+    collection: 'contact'
 });
 
-export default mongoose.model('Contact', MovieSchema);
+export default mongoose.model('Contacts', ContactSchema);

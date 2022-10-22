@@ -25,9 +25,21 @@
         <li class="nav-item">
           <a class="nav-link <%= (page == 'contact') ? 'active' : ''; %>" aria-current="page" href="/contact"><i class="fa-solid fa-envelope"></i> Contact</a>
         </li> 
+        
+        <% if(displayName) { %>
+          <li class="nav=item">
+            <a class="nav-link <%= (page == 'contact-list') ? 'active' : ''; %>" aria-cuttent="page" href="/contact-list"><i class="fa-solid fa-list"></i>Business Contact</a> 
+          </li>
+
+      }
+      
+      <% } else { %>
+      
         <li class="nav=item">
-          <a class="nav-link <%= (page == 'movie-list') ? 'active' : ''; %>" aria-cuttent="page" href="/contact-list"><i class="fa-solid fa-list"></i>Business Contact</a> 
+          <a class="nav-link <%= (page == 'contact-list') ? 'active' : ''; %>" aria-cuttent="page" href="/login"><i class="fa-solid fa-list"></i>Business Contact</a> 
         </li>
+        <% } %>
+
 
         <% if(displayName) { %>
      
